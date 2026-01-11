@@ -1,0 +1,79 @@
+.new-task {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin: 16px 0 24px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.new-task-right {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.new-task-label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.new-task-input {
+  height: 20px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  min-width: 180px;
+}
+
+.new-task-input:focus {
+  border-color: #111827;
+}
+
+.new-task-btn {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: #6683c1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.new-task-btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 690px) {
+  .new-task {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .new-task-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .new-task-btn {
+    width: 100%;
+  }
+
+  .new-task-label {
+    margin-bottom: 4px;
+  }
+}
